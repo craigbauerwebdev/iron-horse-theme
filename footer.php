@@ -9,9 +9,14 @@
 <?php } ?>
 	<footer>
 		<div class="inner">
-			<div id="footer">
-				<p>Iron Horse Instruments &copy;<?php echo date( 'Y'); ?></p>
+			<div class="left">
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer1') ) : endif; ?>
 			</div>
+			<div class="right">
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer2') ) : endif; ?>
+			</div>
+			<hr />
+			<p>Iron Horse Instruments &copy;<?php echo date( 'Y'); ?></p>
 		</div>
 	</footer>
 	<script>
