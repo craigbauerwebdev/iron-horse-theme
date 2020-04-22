@@ -1,0 +1,51 @@
+@import './constants.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    //font-family: 'Roboto', sans-serif;
+    font-family: 'PT Serif', serif;
+}
+@-ms-viewport {
+    width: device-width;
+}
+
+#wpadminbar {
+    position: absolute;
+}
+
+body {
+    /*ie <8 fix*/
+    a, a img{
+    border:none;
+    }
+    .center {
+        text-align: center;
+    }
+    img {border: none;}
+    .inner {
+        max-width: 1000px;
+        padding: 15px 30px;
+        margin: 0 auto;
+    }
+    .full-width {
+        max-width: calc(100% - 60px);
+    }
+    .squash {
+        padding: 5px 30px;
+    }
+    a {
+        color: $theme_color;
+        text-decoration: none;
+    }
+    h1 {
+        color: $theme_color;
+        margin: 5px 0 15px 0;
+    }
+    p {
+        font-weight: 400;
+        margin: 15px 0;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
