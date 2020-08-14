@@ -36,6 +36,11 @@ body {
     .squash {
         padding: 5px 30px;
     }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
     a {
         color: $theme_color;
         text-decoration: none;
@@ -49,5 +54,29 @@ body {
         margin: 15px 0;
         font-size: 16px;
         line-height: 22px;
+    }
+    .left {
+        width: 50%;
+        float: left;
+    }
+    .right {
+        width: 50%;
+        float: right;
+    }
+    .about-left-inner {
+        padding-right: 24px;
+    }
+}
+
+@media screen and (max-width: 800px) {   
+    body {
+        .left {
+            width: 100%;
+            float: none;
+        }
+        .right {
+            width: 100%;
+            float: none;
+        }
     }
 }

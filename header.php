@@ -16,7 +16,7 @@
 		
 		<?php wp_head(); ?>
 	</head>
-        <body>
+        <body <?php body_class(); ?>>
 			<header>
 				<div class="top-bar">
 					<div class="inner squash full-width">845-499-1813</div>
